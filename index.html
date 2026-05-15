@@ -1,0 +1,487 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Monthly Tenant Satisfaction Survey</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+    <link rel="apple-touch-icon" href="favicon_io/apple-touch-icon.png">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="header-inner">
+        <img class="brand-logo" src="Sps%20custom%20green%204.png" alt="SPS logo">
+        <div class="header-copy">
+          <p class="eyebrow">Confidential tenant feedback</p>
+          <h1>Monthly Tenant Satisfaction Survey</h1>
+          <p class="intro">Grade A Office Building | Lagos, Nigeria</p>
+          <p class="meta">Approx. 5 minutes to complete</p>
+        </div>
+      </div>
+    </header>
+
+    <main class="page-shell">
+      <form
+        id="surveyForm"
+        class="survey-form"
+        data-endpoint="https://script.google.com/macros/s/AKfycbxhvlRksLRoI6_yMqI0_PBiJ08L5KswpDPSjtjrXBzKTn_i6EzQulZyPdWXo7HIUGjsGQ/exec"
+      >
+        <section class="instructions" aria-label="Survey instructions">
+          <p>
+            Please rate each item on a scale of 1 to 5. Use 1 for Very Poor or Very Dissatisfied,
+            5 for Excellent or Very Satisfied, and N/A where the item does not apply.
+          </p>
+        </section>
+
+        <fieldset class="survey-section">
+          <legend>Tenant Details</legend>
+          <div class="field-grid">
+            <label class="field">
+              <span>Company / Tenant Name</span>
+              <input name="companyTenantName" type="text" autocomplete="organization" required>
+            </label>
+            <label class="field">
+              <span>Floor / Suite</span>
+              <input name="floorSuite" type="text" autocomplete="off" required>
+            </label>
+            <label class="field">
+              <span>Survey Month / Year</span>
+              <input name="surveyMonthYear" type="text" placeholder="May 2026" autocomplete="off" required>
+            </label>
+          </div>
+        </fieldset>
+
+        <fieldset class="survey-section">
+          <legend>A. Overall Building Experience</legend>
+          <p class="section-note">General impressions of the building this month</p>
+
+          <div class="question">
+            <p class="question-title">Q1. How satisfied are you with your overall experience in this building this month?</p>
+            <div class="scale-grid" role="radiogroup" aria-label="Q1 rating">
+              <label><input name="q1" type="radio" value="1" required><span>1</span></label>
+              <label><input name="q1" type="radio" value="2"><span>2</span></label>
+              <label><input name="q1" type="radio" value="3"><span>3</span></label>
+              <label><input name="q1" type="radio" value="4"><span>4</span></label>
+              <label><input name="q1" type="radio" value="5"><span>5</span></label>
+              <label><input name="q1" type="radio" value="N/A"><span>N/A</span></label>
+            </div>
+          </div>
+
+          <div class="question">
+            <p class="question-title">Q2. How likely are you to recommend this building to another business?</p>
+            <p class="hint">0 = Not at all likely, 10 = Extremely likely</p>
+            <div class="nps-grid" role="radiogroup" aria-label="Q2 NPS rating">
+              <label><input name="q2" type="radio" value="0" required><span>0</span></label>
+              <label><input name="q2" type="radio" value="1"><span>1</span></label>
+              <label><input name="q2" type="radio" value="2"><span>2</span></label>
+              <label><input name="q2" type="radio" value="3"><span>3</span></label>
+              <label><input name="q2" type="radio" value="4"><span>4</span></label>
+              <label><input name="q2" type="radio" value="5"><span>5</span></label>
+              <label><input name="q2" type="radio" value="6"><span>6</span></label>
+              <label><input name="q2" type="radio" value="7"><span>7</span></label>
+              <label><input name="q2" type="radio" value="8"><span>8</span></label>
+              <label><input name="q2" type="radio" value="9"><span>9</span></label>
+              <label><input name="q2" type="radio" value="10"><span>10</span></label>
+            </div>
+          </div>
+
+          <div class="question">
+            <p class="question-title">Q3. Which best describes your lease intention over the next 12 months?</p>
+            <div class="choice-grid">
+              <label><input name="q3" type="radio" value="Definitely renew" required><span>Definitely renew</span></label>
+              <label><input name="q3" type="radio" value="Likely to renew"><span>Likely to renew</span></label>
+              <label><input name="q3" type="radio" value="Undecided"><span>Undecided</span></label>
+              <label><input name="q3" type="radio" value="Considering relocation"><span>Considering relocation</span></label>
+              <label><input name="q3" type="radio" value="Planning to vacate"><span>Planning to vacate</span></label>
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset class="survey-section">
+          <legend>B. Security Services</legend>
+          <p class="section-note">Access control, guard presence, incident response</p>
+
+          <div class="question">
+            <p class="question-title">Q4. How would you rate the professionalism and conduct of security personnel?</p>
+            <div class="scale-grid" role="radiogroup" aria-label="Q4 rating">
+              <label><input name="q4" type="radio" value="1" required><span>1</span></label>
+              <label><input name="q4" type="radio" value="2"><span>2</span></label>
+              <label><input name="q4" type="radio" value="3"><span>3</span></label>
+              <label><input name="q4" type="radio" value="4"><span>4</span></label>
+              <label><input name="q4" type="radio" value="5"><span>5</span></label>
+              <label><input name="q4" type="radio" value="N/A"><span>N/A</span></label>
+            </div>
+          </div>
+
+          <div class="question">
+            <p class="question-title">Q5. How satisfied are you with access control systems?</p>
+            <p class="hint">Turnstiles, visitor management, parking access</p>
+            <div class="scale-grid" role="radiogroup" aria-label="Q5 rating">
+              <label><input name="q5" type="radio" value="1" required><span>1</span></label>
+              <label><input name="q5" type="radio" value="2"><span>2</span></label>
+              <label><input name="q5" type="radio" value="3"><span>3</span></label>
+              <label><input name="q5" type="radio" value="4"><span>4</span></label>
+              <label><input name="q5" type="radio" value="5"><span>5</span></label>
+              <label><input name="q5" type="radio" value="N/A"><span>N/A</span></label>
+            </div>
+          </div>
+
+          <div class="question">
+            <p class="question-title">Q6. Did you experience or witness any security incident this month?</p>
+            <div class="inline-options">
+              <label><input name="q6" type="radio" value="Yes" required><span>Yes</span></label>
+              <label><input name="q6" type="radio" value="No"><span>No</span></label>
+            </div>
+          </div>
+
+          <label class="field question">
+            <span class="question-title">Q7. Comments on security</span>
+            <textarea name="q7" rows="4"></textarea>
+          </label>
+        </fieldset>
+
+        <fieldset class="survey-section">
+          <legend>C. Power Provision &amp; MEP Systems</legend>
+          <p class="section-note">Electricity reliability, backup power, lifts, HVAC</p>
+
+          <div class="question">
+            <p class="question-title">Q8. How satisfied are you with the reliability of mains power supply to your space?</p>
+            <div class="scale-grid" role="radiogroup" aria-label="Q8 rating">
+              <label><input name="q8" type="radio" value="1" required><span>1</span></label>
+              <label><input name="q8" type="radio" value="2"><span>2</span></label>
+              <label><input name="q8" type="radio" value="3"><span>3</span></label>
+              <label><input name="q8" type="radio" value="4"><span>4</span></label>
+              <label><input name="q8" type="radio" value="5"><span>5</span></label>
+              <label><input name="q8" type="radio" value="N/A"><span>N/A</span></label>
+            </div>
+          </div>
+
+          <div class="question">
+            <p class="question-title">Q9. How would you rate the performance of backup generator/UPS systems during outages?</p>
+            <div class="scale-grid" role="radiogroup" aria-label="Q9 rating">
+              <label><input name="q9" type="radio" value="1" required><span>1</span></label>
+              <label><input name="q9" type="radio" value="2"><span>2</span></label>
+              <label><input name="q9" type="radio" value="3"><span>3</span></label>
+              <label><input name="q9" type="radio" value="4"><span>4</span></label>
+              <label><input name="q9" type="radio" value="5"><span>5</span></label>
+              <label><input name="q9" type="radio" value="N/A"><span>N/A</span></label>
+            </div>
+          </div>
+
+          <div class="question">
+            <p class="question-title">Q10. Approximately how many unplanned power interruptions affected your operations this month?</p>
+            <div class="choice-grid">
+              <label><input name="q10" type="radio" value="None" required><span>None</span></label>
+              <label><input name="q10" type="radio" value="1-2 interruptions"><span>1-2 interruptions</span></label>
+              <label><input name="q10" type="radio" value="3-5 interruptions"><span>3-5 interruptions</span></label>
+              <label><input name="q10" type="radio" value="More than 5 interruptions"><span>More than 5 interruptions</span></label>
+            </div>
+          </div>
+
+          <div class="question">
+            <p class="question-title">Q11. How satisfied are you with lift availability and reliability?</p>
+            <div class="scale-grid" role="radiogroup" aria-label="Q11 rating">
+              <label><input name="q11" type="radio" value="1" required><span>1</span></label>
+              <label><input name="q11" type="radio" value="2"><span>2</span></label>
+              <label><input name="q11" type="radio" value="3"><span>3</span></label>
+              <label><input name="q11" type="radio" value="4"><span>4</span></label>
+              <label><input name="q11" type="radio" value="5"><span>5</span></label>
+              <label><input name="q11" type="radio" value="N/A"><span>N/A</span></label>
+            </div>
+          </div>
+
+          <label class="field question">
+            <span class="question-title">Q12. Comments on power or MEP</span>
+            <textarea name="q12" rows="4"></textarea>
+          </label>
+        </fieldset>
+
+        <fieldset class="survey-section">
+          <legend>D. Indoor Air Quality &amp; Thermal Comfort</legend>
+          <p class="section-note">HVAC performance, temperature control, ventilation</p>
+
+          <div class="question">
+            <p class="question-title">Q13. How satisfied are you with the temperature control in your workspace?</p>
+            <div class="scale-grid" role="radiogroup" aria-label="Q13 rating">
+              <label><input name="q13" type="radio" value="1" required><span>1</span></label>
+              <label><input name="q13" type="radio" value="2"><span>2</span></label>
+              <label><input name="q13" type="radio" value="3"><span>3</span></label>
+              <label><input name="q13" type="radio" value="4"><span>4</span></label>
+              <label><input name="q13" type="radio" value="5"><span>5</span></label>
+              <label><input name="q13" type="radio" value="N/A"><span>N/A</span></label>
+            </div>
+          </div>
+
+          <div class="question">
+            <p class="question-title">Q14. How would you rate fresh air ventilation and air circulation in your floor/office?</p>
+            <div class="scale-grid" role="radiogroup" aria-label="Q14 rating">
+              <label><input name="q14" type="radio" value="1" required><span>1</span></label>
+              <label><input name="q14" type="radio" value="2"><span>2</span></label>
+              <label><input name="q14" type="radio" value="3"><span>3</span></label>
+              <label><input name="q14" type="radio" value="4"><span>4</span></label>
+              <label><input name="q14" type="radio" value="5"><span>5</span></label>
+              <label><input name="q14" type="radio" value="N/A"><span>N/A</span></label>
+            </div>
+          </div>
+
+          <div class="question" data-required-checkbox="q15">
+            <p class="question-title">Q15. Did you notice any of the following this month?</p>
+            <p class="hint">Select all that apply</p>
+            <div class="choice-grid">
+              <label><input name="q15" type="checkbox" value="Stuffiness / low airflow"><span>Stuffiness / low airflow</span></label>
+              <label><input name="q15" type="checkbox" value="Excessive cold"><span>Excessive cold</span></label>
+              <label><input name="q15" type="checkbox" value="Unusual odours"><span>Unusual odours</span></label>
+              <label><input name="q15" type="checkbox" value="Humidity issues"><span>Humidity issues</span></label>
+              <label><input name="q15" type="checkbox" value="Excessive heat"><span>Excessive heat</span></label>
+              <label><input name="q15" type="checkbox" value="None of the above"><span>None of the above</span></label>
+            </div>
+          </div>
+
+          <label class="field question">
+            <span class="question-title">Q16. Comments on air quality or thermal comfort</span>
+            <textarea name="q16" rows="4"></textarea>
+          </label>
+        </fieldset>
+
+        <fieldset class="survey-section">
+          <legend>E. Cleaning &amp; Janitorial Services</legend>
+          <p class="section-note">Common areas, washrooms, office cleaning</p>
+
+          <div class="question">
+            <p class="question-title">Q17. How would you rate the cleanliness of building common areas?</p>
+            <p class="hint">Lobby, corridors, lifts</p>
+            <div class="scale-grid" role="radiogroup" aria-label="Q17 rating">
+              <label><input name="q17" type="radio" value="1" required><span>1</span></label>
+              <label><input name="q17" type="radio" value="2"><span>2</span></label>
+              <label><input name="q17" type="radio" value="3"><span>3</span></label>
+              <label><input name="q17" type="radio" value="4"><span>4</span></label>
+              <label><input name="q17" type="radio" value="5"><span>5</span></label>
+              <label><input name="q17" type="radio" value="N/A"><span>N/A</span></label>
+            </div>
+          </div>
+
+          <div class="question">
+            <p class="question-title">Q18. How would you rate washroom cleanliness and restocking?</p>
+            <p class="hint">Soap, tissue, sanitiser</p>
+            <div class="scale-grid" role="radiogroup" aria-label="Q18 rating">
+              <label><input name="q18" type="radio" value="1" required><span>1</span></label>
+              <label><input name="q18" type="radio" value="2"><span>2</span></label>
+              <label><input name="q18" type="radio" value="3"><span>3</span></label>
+              <label><input name="q18" type="radio" value="4"><span>4</span></label>
+              <label><input name="q18" type="radio" value="5"><span>5</span></label>
+              <label><input name="q18" type="radio" value="N/A"><span>N/A</span></label>
+            </div>
+          </div>
+
+          <div class="question">
+            <p class="question-title">Q19. How satisfied are you with the frequency and quality of cleaning in your leased space?</p>
+            <div class="scale-grid" role="radiogroup" aria-label="Q19 rating">
+              <label><input name="q19" type="radio" value="1" required><span>1</span></label>
+              <label><input name="q19" type="radio" value="2"><span>2</span></label>
+              <label><input name="q19" type="radio" value="3"><span>3</span></label>
+              <label><input name="q19" type="radio" value="4"><span>4</span></label>
+              <label><input name="q19" type="radio" value="5"><span>5</span></label>
+              <label><input name="q19" type="radio" value="N/A"><span>N/A</span></label>
+            </div>
+          </div>
+
+          <div class="question">
+            <p class="question-title">Q20. Were cleaning staff courteous and unobtrusive during working hours?</p>
+            <div class="inline-options">
+              <label><input name="q20" type="radio" value="Yes" required><span>Yes</span></label>
+              <label><input name="q20" type="radio" value="No"><span>No</span></label>
+            </div>
+          </div>
+
+          <label class="field question">
+            <span class="question-title">Q21. Comments on cleaning</span>
+            <textarea name="q21" rows="4"></textarea>
+          </label>
+        </fieldset>
+
+        <fieldset class="survey-section">
+          <legend>F. Health, Safety &amp; Environment (HSE)</legend>
+          <p class="section-note">Fire safety, emergency preparedness, waste management</p>
+
+          <div class="question">
+            <p class="question-title">Q22. How confident are you in the building's fire safety and emergency evacuation procedures?</p>
+            <p class="hint">1 = Not at all confident, 5 = Fully confident</p>
+            <div class="scale-grid" role="radiogroup" aria-label="Q22 rating">
+              <label><input name="q22" type="radio" value="1" required><span>1</span></label>
+              <label><input name="q22" type="radio" value="2"><span>2</span></label>
+              <label><input name="q22" type="radio" value="3"><span>3</span></label>
+              <label><input name="q22" type="radio" value="4"><span>4</span></label>
+              <label><input name="q22" type="radio" value="5"><span>5</span></label>
+              <label><input name="q22" type="radio" value="N/A"><span>N/A</span></label>
+            </div>
+          </div>
+
+          <div class="question">
+            <p class="question-title">Q23. Are emergency exits, fire extinguishers, and signage clearly visible and accessible?</p>
+            <div class="inline-options">
+              <label><input name="q23" type="radio" value="Yes" required><span>Yes</span></label>
+              <label><input name="q23" type="radio" value="No"><span>No</span></label>
+            </div>
+          </div>
+
+          <div class="question">
+            <p class="question-title">Q24. How satisfied are you with waste segregation and disposal arrangements?</p>
+            <div class="scale-grid" role="radiogroup" aria-label="Q24 rating">
+              <label><input name="q24" type="radio" value="1" required><span>1</span></label>
+              <label><input name="q24" type="radio" value="2"><span>2</span></label>
+              <label><input name="q24" type="radio" value="3"><span>3</span></label>
+              <label><input name="q24" type="radio" value="4"><span>4</span></label>
+              <label><input name="q24" type="radio" value="5"><span>5</span></label>
+              <label><input name="q24" type="radio" value="N/A"><span>N/A</span></label>
+            </div>
+          </div>
+
+          <div class="question">
+            <p class="question-title">Q25. Did you observe any unresolved HSE hazard this month?</p>
+            <div class="inline-options">
+              <label><input name="q25" type="radio" value="Yes" required><span>Yes</span></label>
+              <label><input name="q25" type="radio" value="No"><span>No</span></label>
+            </div>
+          </div>
+
+          <label class="field question">
+            <span class="question-title">Q26. Comments on HSE</span>
+            <span class="hint">Describe any hazard, near-miss, or suggestion</span>
+            <textarea name="q26" rows="4"></textarea>
+          </label>
+        </fieldset>
+
+        <fieldset class="survey-section">
+          <legend>G. Facilities Management &amp; Responsiveness</legend>
+          <p class="section-note">Help desk, maintenance, communication</p>
+
+          <div class="question">
+            <p class="question-title">Q27. Did you log a maintenance or facilities request this month?</p>
+            <div class="inline-options">
+              <label><input name="q27" type="radio" value="Yes" required><span>Yes</span></label>
+              <label><input name="q27" type="radio" value="No"><span>No</span></label>
+            </div>
+          </div>
+
+          <div class="conditional-block" data-follow-up hidden>
+            <div class="question">
+              <p class="question-title">Q28. How quickly was your request acknowledged?</p>
+              <div class="choice-grid">
+                <label><input name="q28" type="radio" value="Within 1 hour" required><span>Within 1 hour</span></label>
+                <label><input name="q28" type="radio" value="Within 4 hours"><span>Within 4 hours</span></label>
+                <label><input name="q28" type="radio" value="Same day"><span>Same day</span></label>
+                <label><input name="q28" type="radio" value="Next day or more"><span>Next day or more</span></label>
+                <label><input name="q28" type="radio" value="No acknowledgement received"><span>No acknowledgement received</span></label>
+              </div>
+            </div>
+
+            <div class="question">
+              <p class="question-title">Q29. How satisfied were you with the resolution of your request?</p>
+              <div class="scale-grid" role="radiogroup" aria-label="Q29 rating">
+                <label><input name="q29" type="radio" value="1" required><span>1</span></label>
+                <label><input name="q29" type="radio" value="2"><span>2</span></label>
+                <label><input name="q29" type="radio" value="3"><span>3</span></label>
+                <label><input name="q29" type="radio" value="4"><span>4</span></label>
+                <label><input name="q29" type="radio" value="5"><span>5</span></label>
+                <label><input name="q29" type="radio" value="N/A"><span>N/A</span></label>
+              </div>
+            </div>
+          </div>
+
+          <div class="question">
+            <p class="question-title">Q30. How would you rate communication from building management?</p>
+            <p class="hint">Notices, planned works, updates</p>
+            <div class="scale-grid" role="radiogroup" aria-label="Q30 rating">
+              <label><input name="q30" type="radio" value="1" required><span>1</span></label>
+              <label><input name="q30" type="radio" value="2"><span>2</span></label>
+              <label><input name="q30" type="radio" value="3"><span>3</span></label>
+              <label><input name="q30" type="radio" value="4"><span>4</span></label>
+              <label><input name="q30" type="radio" value="5"><span>5</span></label>
+              <label><input name="q30" type="radio" value="N/A"><span>N/A</span></label>
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset class="survey-section">
+          <legend>H. Parking, Amenities &amp; Connectivity</legend>
+          <p class="section-note">Parking management, telecoms, concierge services</p>
+
+          <div class="question">
+            <p class="question-title">Q31. How satisfied are you with parking availability and management?</p>
+            <div class="scale-grid" role="radiogroup" aria-label="Q31 rating">
+              <label><input name="q31" type="radio" value="1" required><span>1</span></label>
+              <label><input name="q31" type="radio" value="2"><span>2</span></label>
+              <label><input name="q31" type="radio" value="3"><span>3</span></label>
+              <label><input name="q31" type="radio" value="4"><span>4</span></label>
+              <label><input name="q31" type="radio" value="5"><span>5</span></label>
+              <label><input name="q31" type="radio" value="N/A"><span>N/A</span></label>
+            </div>
+          </div>
+
+          <div class="question">
+            <p class="question-title">Q32. How would you rate the quality and reliability of building-provided internet/telecoms infrastructure?</p>
+            <div class="scale-grid" role="radiogroup" aria-label="Q32 rating">
+              <label><input name="q32" type="radio" value="1" required><span>1</span></label>
+              <label><input name="q32" type="radio" value="2"><span>2</span></label>
+              <label><input name="q32" type="radio" value="3"><span>3</span></label>
+              <label><input name="q32" type="radio" value="4"><span>4</span></label>
+              <label><input name="q32" type="radio" value="5"><span>5</span></label>
+              <label><input name="q32" type="radio" value="N/A"><span>N/A</span></label>
+            </div>
+          </div>
+
+          <div class="question">
+            <p class="question-title">Q33. How satisfied are you with the reception/concierge service for guests and visitors?</p>
+            <div class="scale-grid" role="radiogroup" aria-label="Q33 rating">
+              <label><input name="q33" type="radio" value="1" required><span>1</span></label>
+              <label><input name="q33" type="radio" value="2"><span>2</span></label>
+              <label><input name="q33" type="radio" value="3"><span>3</span></label>
+              <label><input name="q33" type="radio" value="4"><span>4</span></label>
+              <label><input name="q33" type="radio" value="5"><span>5</span></label>
+              <label><input name="q33" type="radio" value="N/A"><span>N/A</span></label>
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset class="survey-section">
+          <legend>I. Open Feedback &amp; Priorities</legend>
+          <p class="section-note">Your priorities and suggestions</p>
+
+          <div class="question">
+            <p class="question-title">Q34. Which service area needs the most improvement this month?</p>
+            <div class="choice-grid">
+              <label><input name="q34" type="radio" value="Power provision" required><span>Power provision</span></label>
+              <label><input name="q34" type="radio" value="Security"><span>Security</span></label>
+              <label><input name="q34" type="radio" value="Cleaning & janitorial"><span>Cleaning &amp; janitorial</span></label>
+              <label><input name="q34" type="radio" value="Air quality & thermal comfort"><span>Air quality &amp; thermal comfort</span></label>
+              <label><input name="q34" type="radio" value="HSE"><span>HSE</span></label>
+              <label><input name="q34" type="radio" value="Facilities management"><span>Facilities management</span></label>
+              <label><input name="q34" type="radio" value="Parking"><span>Parking</span></label>
+              <label><input name="q34" type="radio" value="Connectivity"><span>Connectivity</span></label>
+              <label><input name="q34" type="radio" value="Reception / concierge"><span>Reception / concierge</span></label>
+              <label><input name="q34" type="radio" value="Overall management communication"><span>Overall management communication</span></label>
+            </div>
+          </div>
+
+          <label class="field question">
+            <span class="question-title">Q35. What is the single most important improvement building management could make to enhance your experience?</span>
+            <textarea name="q35" rows="5" required></textarea>
+          </label>
+
+          <label class="field question">
+            <span class="question-title">Q36. Any other comments or commendations for the building management team?</span>
+            <textarea name="q36" rows="5"></textarea>
+          </label>
+        </fieldset>
+
+        <div class="form-actions">
+          <p id="formStatus" class="form-status" role="status" aria-live="polite"></p>
+          <button type="submit">Submit survey</button>
+        </div>
+      </form>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
